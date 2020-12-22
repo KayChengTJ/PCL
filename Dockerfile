@@ -1,7 +1,6 @@
-# For valid combinations, check the following repo:
-# https://gitlab.com/nvidia/container-images/cuda/tree/master/dist
 # To enable cuda, use "--build-arg USE_CUDA=true" during image build process
-# BUILD COMMAND docker build --network host --build-arg USE_CUDA=true -t erwinqi/pcl:v1 .
+# BUILD COMMAND docker build -t ${ImageName}:${tag} --build-arg USE_CUDA=true .
+
 ARG USE_CUDA
 ARG CUDA_VERSION="9.2"
 ARG UBUNTU_DISTRO="18.04"
