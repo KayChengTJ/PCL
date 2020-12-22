@@ -107,7 +107,7 @@ RUN cd /opt && \
 	ln -s /opt/pcl-trunk /opt/pcl && \
 	cd /opt/pcl && git checkout pcl-1.11.1 && \
 	mkdir -p /opt/pcl-trunk/release && \
-	cd /opt/pcl/release && cmake -DCMAKE_BUILD_TYPE=None -DBUILD_GPU=ON -DBUILD_apps=ON -DBUILD_examples=ON .. && \
+	cd /opt/pcl/release && cmake -DCMAKE_BUILD_TYPE=None -DBUILD_GPU=ON -DBUILD_apps=ON -DBUILD_examples=ON -DBUILD_CUDA=ON .. && \
 	cd /opt/pcl/release && make -j4 && \
 	cd /opt/pcl/release && make install && \
 	cd /opt/pcl/release && make clean && \
