@@ -9,3 +9,4 @@ Other lib: liblas
 
 # Image Build Command
 docker build -t ${ImageName}:${tag} --build-arg USE_CUDA=true .
+OR: docker build --build-arg USE_CUDA=true -t ${ImageName}:${tag} .
